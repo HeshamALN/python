@@ -1,8 +1,15 @@
 first = input("Enter the first number:")
 second = input("Enter the second number:")
 
-def userinput
-if userinput(first,second):
----    print(calculate_age(year,month,day), " Years") ----
+#while first == str:
+method= input("choose the operation (+,-,/,*))")
+if method == "+":
+        print("The anser is" + (float(first) + float(second)))
+elif method == "-":
+        print("The anser is" + (float(first) - float (second)))
+elif method == "*":
+        print("The anser is" + (float(first) * float (second)))
+elif method == "/":
+        print("The anser is" + (float(first) / float (second)))
 else:
-    print("input is invalid, kindly try again.")
+        print("invalid entry")
