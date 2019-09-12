@@ -1,15 +1,19 @@
-first = input("Enter the first number:")
-second = input("Enter the second number:")
+first = int(input("Enter the first number:"))
+second = int(input("Enter the second number:"))
 
 #while first == str:
-method= input("choose the operation (+,-,/,*))")
+method= input("choose the operation (+,-,*,/))")
 if method == "+":
-        print("The anser is" + (float(first) + float(second)))
+        result = first + second
+        print("The anser is " + str(result))
 elif method == "-":
-        print("The anser is" + (float(first) - float (second)))
+        result = first - second
+        print("The anser is " + str(result))
 elif method == "*":
-        print("The anser is" + (float(first) * float (second)))
+        result = first * second
+        print("The anser is " + str(result))
 elif method == "/":
-        print("The anser is" + (float(first) / float (second)))
+        result = first / second
+        print("The anser is " + str(result))
 else:
         print("invalid entry")
