@@ -22,19 +22,18 @@ for x in skills:#7
 	print(i,x)
 
 
-add = input("Choose a skill from above by entering its number: ")#8
-cv["skills"].append(add)#8
+add = int(input("Choose a skill from above by entering its number: "))#8
+cv["skills"].append(skills[add-1])#8
 
-add = input("Choose another skill from above by entering its number: ")#9
-cv["skills"].append(add)#9
+add = int(input("Choose another skill from above by entering its number: "))#9
+
+cv["skills"].append(skills[add-1])#9
 
 
 if cv["age"] > 25 and cv["experience"] > 2 and "Python" in cv["skills"]:
 		print("You have been accepted! %s" % name.title())
 else:
 	print("you're not accepted, get out!")
-
-
 
 
 #print(cv)
