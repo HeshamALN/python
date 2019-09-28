@@ -22,7 +22,7 @@ class Manager(Employee):
 		return float(self.bonus_percentage) * float(self.salary)
 
 	def __str__(self):
-		return "Employees\nName: %s, Age: %s, Salary: %s, Working Years: %s, Bonus: %.3f" % (self.name, self.age, self.salary, self.get_working_years(), self.get_bonus())
+		return "Manager\nName: %s, Age: %s, Salary: %s, Working Years: %s, Bonus: %.3f" % (self.name, self.age, self.salary, self.get_working_years(), self.get_bonus())
 
 
 print("Welcome to HR Pro 2019")
@@ -73,6 +73,8 @@ while userselect != '5':
 		managers.append(manager)
 		print("Manager added succesfully")
 	userselect = input("What would you like to do? ")
+print("Thank you and goodbye!")
+
 # #If 4 was chosen, allow the HR employee to add a manager to the system (the managers list).
 # userselect == '5'	
 # 	print("Thank you and goodbye!")a
